@@ -1,0 +1,6 @@
+name: MinecraftBingo
+version: '${project.version}'
+main: de.nyc.minecraftbingo.Main
+api-version: 1.19
+authors: [ NYC_1809 ]
+description: Bingo Plugin for Minecraft 1.19.3
