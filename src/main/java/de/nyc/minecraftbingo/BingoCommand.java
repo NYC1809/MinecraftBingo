@@ -1,5 +1,8 @@
 package de.nyc.minecraftbingo;
 
+import de.nyc.minecraftbingo.Enums.GameMode;
+import de.nyc.minecraftbingo.Utils.GenerateBingoCard;
+import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -14,9 +17,16 @@ public class BingoCommand implements CommandExecutor {
         }
 
         Player player = ((Player) sender).getPlayer();
+        assert player != null;
 
+        GenerateBingoCard generateBingoCard = new GenerateBingoCard(GameMode.CLASSIC);
 
-
+        System.out.println("BINGO MAP: ");
+        for(int i = 0; i < 25; i++) {
+            Material material = generateBingoCard.getBingoMap().get(i);
+            System.out.println("[" + i + "] " + material);
+            player.sendMessage("[" + i + "] " + material);
+        }
 
         return false;
     }

@@ -2,7 +2,7 @@ package de.nyc.minecraftbingo.Enums;
 
 //Enum with every obtainable Block for "Bingo"
 
-public enum Blocks {
+public enum Items {
 
     ACACIA_BOAT("easy"),
     ACACIA_BUTTON("easy"),
@@ -780,7 +780,7 @@ public enum Blocks {
 
     private final String difficulty; //easy, medium, hard
 
-    Blocks(String difficulty) {
+    Items(String difficulty) {
         this.difficulty = difficulty;
     }
 
