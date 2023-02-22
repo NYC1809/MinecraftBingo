@@ -1,6 +1,10 @@
 name: MinecraftBingo
 version: '${project.version}'
-main: de.nyc.minecraftbingo.Main
+main: de.nyc.minecraftbingo.Utils.Main
 api-version: 1.19
 authors: [ NYC_1809 ]
 description: Bingo Plugin for Minecraft 1.19.3
+
+commands:
+  bingo:
+    description: start and modify the "bingo" gamemode
